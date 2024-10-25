@@ -1,10 +1,10 @@
 [gd_scene load_steps=10 format=3 uid="uid://8s703xmv8wp0"]
 
 [ext_resource type="Script" path="res://scripts/world.gd" id="1_8krt3"]
-[ext_resource type="Texture2D" uid="uid://cihapqrga8qgj" path="res://assets/textures/dev/grids/Dark/texture_07.png" id="1_w0343"]
-[ext_resource type="Texture2D" uid="uid://dfknpwaxq6mxp" path="res://assets/textures/panorama6.jpg" id="2_3bjro"]
+[ext_resource type="Texture2D" uid="uid://cfoedfccrhw8a" path="res://assets/textures/texture_07.png" id="1_w0343"]
+[ext_resource type="Texture2D" uid="uid://dces4j7mdv8vv" path="res://assets/textures/panorama6.jpg" id="2_3bjro"]
 [ext_resource type="PackedScene" uid="uid://cp6kko0ihyto4" path="res://scenes/character.tscn" id="3_pn7qq"]
-[ext_resource type="PackedScene" uid="uid://cb0armmqxofan" path="res://scenes/star.tscn" id="4_xg1fa"]
+[ext_resource type="PackedScene" uid="uid://k7mjs0hbfbnq" path="res://scenes/StarV2.tscn" id="5_r8pbr"]
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_c8bk3"]
 albedo_texture = ExtResource("1_w0343")
@@ -46,5 +46,11 @@ shadow_enabled = true
 [node name="CharacterBody3D" parent="." instance=ExtResource("3_pn7qq")]
 transform = Transform3D(1, 0, 0, 0, 1, 0, 0, 0, 1, 0, 0.24134, 0)
 
-[node name="Star" parent="." instance=ExtResource("4_xg1fa")]
-transform = Transform3D(1, 0, 0, 0, 0.707107, 0.707107, 0, -0.707107, 0.707107, 0, 3, 10)
+[node name="StarV2" parent="." instance=ExtResource("5_r8pbr")]
+transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, 2.65656, 8.29656, 8.26085)
+
+[node name="StarV3" parent="." instance=ExtResource("5_r8pbr")]
+transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, 4.15662, 8.87513, -15.4153)
+
+[node name="StarV4" parent="." instance=ExtResource("5_r8pbr")]
+transform = Transform3D(0.1, 0, 0, 0, -4.37114e-09, 0.1, 0, -0.1, -4.37114e-09, -17.2362, 13.5198, -1.99578)
